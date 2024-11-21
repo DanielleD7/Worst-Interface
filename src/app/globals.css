@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.background-image {
+  background-image: url('/space.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.gif {
+  z-index: 1;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
