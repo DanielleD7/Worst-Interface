@@ -11,19 +11,36 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
 import Confetti from 'react-confetti'
 
+// const fieldOptions = [
+//   { value: "firstName", label: "First Name" },
+//   { value: "lastName", label: "Last Name" },
+//   { value: "email", label: "Email" },
+//   { value: "address", label: "Street Address" },
+//   { value: "city", label: "City" },
+//   { value: "state", label: "State" },
+//   { value: "zipCode", label: "ZIP Code" },
+//   { value: "country", label: "Country" },
+//   { value: "cardNumber", label: "Card Number" },
+//   { value: "expMonth", label: "Expiration Month" },
+//   { value: "expYear", label: "Expiration Year" },
+//   { value: "cvv", label: "CVV" },
+// ]
+
 const fieldOptions = [
-  { value: "firstName", label: "First Name" },
   { value: "lastName", label: "Last Name" },
   { value: "email", label: "Email" },
-  { value: "address", label: "Street Address" },
-  { value: "city", label: "City" },
-  { value: "state", label: "State" },
-  { value: "zipCode", label: "ZIP Code" },
+  { value: "firstName", label: "First Name" },
+
   { value: "country", label: "Country" },
-  { value: "cardNumber", label: "Card Number" },
+  { value: "zipCode", label: "ZIP Code" },
+  { value: "address", label: "Street Address" },
+  { value: "state", label: "State" },
+  { value: "city", label: "City" },
+
   { value: "expMonth", label: "Expiration Month" },
-  { value: "expYear", label: "Expiration Year" },
   { value: "cvv", label: "CVV" },
+  { value: "expYear", label: "Expiration Year" },
+  { value: "cardNumber", label: "Card Number" },
 ]
 
 interface FieldTypes {
@@ -284,8 +301,6 @@ export default function ConfusingCheckoutPage() {
                     <img src="/ratchet-cat.gif" alt="Ratchet Cat Gif"/>
                   </div>
               )}
-
-
             </div>
           </CardContent>
         </Card>
